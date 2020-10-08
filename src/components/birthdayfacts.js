@@ -1,7 +1,7 @@
+//REACT
 import React, { useState } from "react";
-// import ShowData from "./showdata";
 
-const BirthdayFacts = () => {
+const BirthdayFacts = (styles) => {
   const [dob, setDob] = useState("1994-01-26");
   const [birthDate, setBirthDate] = useState("1994-01-26");
   const [loading, setLoading] = useState(false);
@@ -34,7 +34,6 @@ const BirthdayFacts = () => {
       );
       const json = await response.json();
 
-      //   console.log(neoData);
       setNeoData(json.near_earth_objects[birthDate]);
       setLoading(null);
     } catch (error) {
@@ -47,7 +46,6 @@ const BirthdayFacts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     getNeoData();
-    // console.log(neoData);
   };
 
   const handleChange = (e) => {
@@ -81,7 +79,7 @@ const BirthdayFacts = () => {
       <div className="dob-data">
         {loading ? (
           <div>
-            <h3>...Loading</h3>{" "}
+            <h3>...Loading!</h3>{" "}
           </div>
         ) : (
           <div>

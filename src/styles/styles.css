@@ -23,9 +23,7 @@ h3 {
   font-family: "Encode Sans Expanded", sans-serif;
   font-size: 24px;
 }
-p {
-  margin-bottom: 24px;
-}
+
 p strong {
   font-weight: 600;
 }
@@ -33,17 +31,18 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 600;
+  font-size: 24px;
 }
 label {
   font-size: 24px;
 }
-div#app {
+#app {
   max-width: 996px;
-  padding: 0 48px;
+  margin: 0 24px;
 }
 section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 48px 24px;
 }
 
@@ -57,7 +56,9 @@ header {
 
 header img {
   width: 48px;
-  transform: rotate("360deg");
+}
+.rotate {
+  animation: rotation 2s infinite linear;
 }
 section.div {
   max-width: 600px;
@@ -87,7 +88,12 @@ section.div {
   margin-bottom: 24px;
 }
 
+#about p {
+  margin-bottom: 24px;
+}
+
 #facts .submit-dob {
+  /* max-width: 800px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +120,22 @@ section.div {
 footer {
   background-color: #151515;
   padding: 6px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 12px;
+}
+
+footer a {
+  font-size: 12px;
+}
+
+@media all and (max-widht: 667px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
 }

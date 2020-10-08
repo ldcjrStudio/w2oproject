@@ -6,7 +6,7 @@ import asteroid from "../images/asteroid.svg";
 const Header = () => {
   return (
     <header>
-      <h1>
+      <h1 className="rotate">
         <img src={asteroid} alt="Asteroid logo" />
       </h1>
     </header>
