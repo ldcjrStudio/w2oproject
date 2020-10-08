@@ -26,7 +26,10 @@ const About = () => {
           Their organization is dedicated to dilligently searching and studying
           NEOs in order to predict potential NEO collisions with our precious
           Earth.
-          <strong>The best part about it is, they've shared it will us!</strong>
+          <strong>
+            The best part about it is, they've shared their research and
+            insights with us!
+          </strong>
         </p>
       </div>
     </section>
