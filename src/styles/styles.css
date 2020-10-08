@@ -23,13 +23,21 @@ h3 {
   font-family: "Encode Sans Expanded", sans-serif;
   font-size: 24px;
 }
+p {
+  margin-bottom: 24px;
+}
 p strong {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: white;
   font-weight: 600;
 }
 label {
   font-size: 24px;
 }
-#app {
+div#app {
   max-width: 996px;
   padding: 0 48px;
 }
@@ -41,16 +49,15 @@ section {
 
 header {
   width: 100%;
-  /* background-color: #fcfefc; */
   position: fixed;
   top: 0;
   left: 0;
-  padding: 12px;
-  /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); */
+  padding: 24px;
 }
 
 header img {
   width: 48px;
+  transform: rotate("360deg");
 }
 section.div {
   max-width: 600px;
@@ -72,9 +79,6 @@ section.div {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-#about p {
-  margin-bottom: 24px;
 }
 
 #about div {
@@ -102,6 +106,14 @@ section.div {
 }
 
 .dob-data {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
+}
+
+footer {
+  background-color: #151515;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
 }
