@@ -1,11 +1,17 @@
 import React from "react";
 
-const ShowData = () => {
+const ShowData = (date) => {
   return (
     <div>
-      {/* <ul>
-        {dates.map((date) => date.forEach(<li>date.name</li>))}
-      </ul> */}
+      <ul>
+        {date.forEach((item) => {
+          <li>
+            <div>
+              <p>{name}</p>
+            </div>
+          </li>;
+        })}
+      </ul>
     </div>
   );
 };
